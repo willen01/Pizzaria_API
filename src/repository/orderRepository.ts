@@ -14,6 +14,6 @@ export class OrdersRepository implements Order {
   }
 
   async listOne(id: number): Promise<IOrder | null> {
-    return await prismaClient.orders.findUnique({ where: { id } });
+    return await prismaClient.orders.findUnique({ where: { id }, include: {content: true} });
   }
 }
