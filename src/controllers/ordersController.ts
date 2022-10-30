@@ -11,7 +11,7 @@ export class OrdersController {
       await orders.create(orderData);
       response.status(201).json({ msg: "order created successfully" });
     } catch (error) {
-      response.status(4000).json({ error });
+      response.status(400).json({ error });
     }
   }
 
