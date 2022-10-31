@@ -1,4 +1,5 @@
 import { IOrder } from "../entities/Order";
+import { IPizzaOrder } from "../entities/PizzaOrder";
 import { OrdersRepository } from "../repository/orderRepository";
 
 export class OrdersUseCase {
