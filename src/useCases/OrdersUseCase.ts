@@ -1,9 +1,8 @@
 import { IOrder } from "../entities/Order";
-import { IPizzaOrder } from "../entities/PizzaOrder";
-import { OrdersRepository } from "../repository/orderRepository";
+import { Order } from "../protocols/Order";
 
 export class OrdersUseCase {
-  constructor(private readonly repository: OrdersRepository) {}
+  constructor(private readonly repository: Order) {}
 
   async create(order: IOrder): Promise<void> {
     await this.repository.create(order);
