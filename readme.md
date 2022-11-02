@@ -30,7 +30,9 @@ Para executar essa aplicação, tenha instalado em sua máquina
 
 ### Iniciando aplicação
 
-Após clonar este repositório, instale as dependências usando o comando `yarn install`, altere o arquivo `.env.example` para `.env` e configure a url de conexão do banco com as credênciais adequadas. Após configurar a url de conexão inicialize o postgresSql via docker com o comando `docker-compose up`
+Para utilizar essa aplicação, acesse seu deploy diretamente <a href="https://pizzaria-api.onrender.com/">clicando aqui</a>, ou faça a execução localmente com os comandos a seguir:
+
+Clone este repositório, instale as dependências usando o comando `yarn install`, altere o arquivo `.env.example` para `.env` e configure a url de conexão do banco com as credênciais adequadas. Após configurar a url de conexão inicialize o postgresSql via docker com o comando `docker-compose up`
 
 #### Executando migrations
 
